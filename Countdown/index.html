@@ -1,51 +1,32 @@
-<html lang='en'>
-<head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Document</title>
-    <link rel='stylesheet' href='./styles.css'>
-    
-</head>
-<body>
-    <div id='title'>2021 Countdown</div>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Countdown Timer</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <h1 style="font-family: Lalezar">نوروز 1400</h1>
 
-    <!-- <div id='day-item'>0</div>
-    <div id='day'>Day</div>
-    <div id='hour-item'>0</div>
-    <div id='hour'>Hour</div>
-    <div id='minute-item'>0</div>
-    <div id='minute'>Minute</div>
-    <div id='second-item'>0</div>
-    <div id='second'>Second</div> -->
-
-    
-        <!-- <p id='day'>Day</p>
-        <p id='hour'>Hour</p>
-        <p id='minute'>Minute</p>
-        <p id='second'>Second</p>
-         -->
-         <div class='container'>
-         <p  class='h'>Days</p>
-        
-        <p class='h1'>Hours</p>
-        
-        <p  class='h1'>Minutes</p>
-        
-        <p class='h1'>Seconds</p>
-        <p id='day1' id='day-item'></p>
-        <p id='tab'>:</p>
-        <p id='hour1' class='hour'></p>
-        <p id='tab'>:</p>
-        <p id='minute1' class='minute'></p>
-        <p id='tab'>:</p>
-        <p id='second1' class='second'></p>
-
-    </div>
-    
-   
-
-
-
-    <script src='./script.js'></script>
-</body>
+        <div class="countdown-container">
+            <div class="countdown-el days-c">
+                <p class="big-text" id="days">0</p>
+                <span>days</span>
+            </div>
+            <div class="countdown-el hours-c">
+                <p class="big-text" id="hours">0</p>
+                <span>hours</span>
+            </div>
+            <div class="countdown-el mins-c">
+                <p class="big-text" id="mins">0</p>
+                <span>mins</span>
+            </div>
+            <div class="countdown-el seconds-c">
+                <p class="big-text" id="seconds">0</p>
+                <span>seconds</span>
+            </div>
+        </div>
+    </body>
 </html>
