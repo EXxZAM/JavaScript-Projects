@@ -52,6 +52,7 @@ function passwordGen(level) {
     "y",
     "z",
   ];
+  chars += chars.toString().toUpperCase();
   var nums = ['1','2','3','4','5','6','7','8','9','0']
   var sym = ['!','”','#','$','&','%']
   let password = '';
@@ -59,39 +60,33 @@ function passwordGen(level) {
   if (level == "easy") {
     for (var i = 0; i < 2; i++) {
       password += chars[Math.floor(Math.random() * chars.length)];
-    };
-    for (var j = 0; j < 2; j++) {
       password += nums[Math.floor(Math.random() * nums.length)];
-    }
+    };
+    
     result.innerHTML = password;
     result.style.visibility = "visible";
   } else if (level == "medium") {
     for (var i = 0; i < 2; i++) {
       password += chars[Math.floor(Math.random() * chars.length)];
-    };
-    for (var j = 0; j < 4; j++) {
+      password += sym[Math.floor(Math.random() * sym.length)];
       password += nums[Math.floor(Math.random() * nums.length)];
     };
-    for (var k = 0; k < 2; k++) {
-      password += sym[Math.floor(Math.random() * sym.length)];
-    };
+    
     result.innerHTML = password;
     result.style.visibility = "visible"; 
   } else if (level == "strong") {
     for (var i = 0; i < 4; i++) {
       password += chars[Math.floor(Math.random() * chars.length)];
-    };
-    for (var j = 0; j < 4; j++) {
+      password += sym[Math.floor(Math.random() * sym.length)];
       password += nums[Math.floor(Math.random() * nums.length)];
     };
-    for (var k = 0; k < 4; k++) {
-      password += sym[Math.floor(Math.random() * sym.length)];
-    };
+    
     result.innerHTML = password;
     result.style.visibility = "visible"; 
+    
   }
   else {
-    console.log("later");
+    alert('WTF!')
   }
 }
 
@@ -100,6 +95,7 @@ genBtn.addEventListener("click", () => {
   result.style.visibility = "hidden";
   if (answer) {
     passwordGen(answer);
+  
   } else {
     alert("Please Choose an option and try again!");
   }
