@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@200;400;600;&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    
+    min-height: 100vh;
+    
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.container h1 {
+    font-size: 100px;
+    font-weight: lighter;
+    margin: 0;
+    outline: none;
+    padding: 0;
+}
+.container h4 {
+    font-size: 30px;
+    font-weight: lighter;
+    margin: 0;
+    outline: none;
+    padding: 0;
+}
+.container h5 {
+    font-size: 15px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    
+}
